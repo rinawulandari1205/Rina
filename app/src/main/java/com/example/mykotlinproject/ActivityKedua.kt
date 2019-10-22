@@ -27,12 +27,10 @@ class ActivityKedua : AppCompatActivity() {
         txt_view.text = "NIM : "+nim+"\nNama : "+nama+"\nNilai : "+nilai
 
         val keterangan = findViewById<TextView>(R.id.keterangan)
-        if (nilai >= 100.toInt().toString()){
+        if (nilai >= 80.toInt().toString() || nilai == 100.toInt().toString()) {
             keterangan.text = "Keterangan : A"
         }
-        else if (nilai >= 80.toInt().toString()){
-            keterangan.text = "Keterangan : A"
-        }
+
         else if (nilai >= 60.toInt().toString()){
             keterangan.text = "Keterangan : B"
         }

@@ -6,34 +6,48 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
     <LinearLayout
-            android:orientation="vertical"
             android:layout_width="395dp"
-            android:layout_height="715dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+            android:layout_height="715dp"
+            android:background="#9C27B0"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
         <EditText
+                android:id="@+id/nim"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ems="10"
                 android:inputType="textPersonName"
                 android:text="NIM"
-                android:ems="10"
-                android:id="@+id/nim"/>
+                android:textColor="#2196F3" />
+
         <EditText
+                android:id="@+id/nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Nama"
-                android:ems="10"
-                android:id="@+id/nama"/>
+                android:textColor="#03A9F4" />
+
         <EditText
+                android:id="@+id/nilai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:ems="10"
                 android:inputType="numberDecimal"
                 android:text="Nilai"
-                android:ems="10"
-                android:id="@+id/nilai"/>
+                android:textColor="#03A9F4" />
+
         <Button
-                android:text="PROSES"
+                android:id="@+id/btn_proses"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/btn_proses"/>
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:text="PROSES"
+                android:textColor="#673AB7" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
